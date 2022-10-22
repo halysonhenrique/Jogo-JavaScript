@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('./imagens/1.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 10px dashed black;
+  
+}
+
+.pm {
+    position: absolute;
+    width: 150px;
+    bottom: -30px; 
+    /*left: 1230px; */
+    animation: pm-animation 1.5s infinite linear;
+}
+
+.motoca {
+    position: absolute;
+    width: 250px;
+    bottom: -55px;
+    right: 0;
+   
+}
+
+.puxoraspo {
+    animation: grau 800ms;
+}
+
+
+ @keyframes grau { 
+
+    0% {bottom: -55px}
+    10% {bottom: 0px;}
+    20% {bottom: 20px;}
+    30% {bottom: 40px;}
+    40% {bottom: 80px;}
+    50% {   
+        bottom: 150px;
+        transform: rotate(75deg); }
+    60% {
+        bottom: 140px;
+        transform: rotate(40deg);}
+    100% {bottom: -55px;}
+
+} 
+
+ @keyframes pm-animation {
+    from {left: -200px}
+    to {left: 100%}
+}
